@@ -1,0 +1,5 @@
+<h2>CREATE NEW TASK</h2>
+<%= form_with url:"tasks#create",local: true do|f| %>
+  <%= f.text_field :title %>
+  <%= f.submit '作成'%>
+<% end %>
